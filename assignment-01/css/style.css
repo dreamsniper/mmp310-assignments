@@ -1,0 +1,9 @@
+header {
+  background-color: #000;
+  background-image: url("https://raw.githubusercontent.com/dreamsniper/mmp310-assignments/master/assignment-01/img/logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 15px;
+  width: 650px;
+  height: 160px;
+}
