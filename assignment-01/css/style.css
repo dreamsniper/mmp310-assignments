@@ -1,0 +1,45 @@
+body {
+  height: 630px;
+  width: 650px;
+  margin: 0 auto;
+  margin-top: 50px; }
+
+p {
+  font-size: 13px; }
+
+header {
+  background: black url("https://raw.githubusercontent.com/dreamsniper/mmp310-assignments/master/assignment-01/img/logo.png") no-repeat scroll 50% 50%;
+  width: 650px;
+  height: 161px; }
+
+div {
+  margin: 25px; }
+  div main {
+    width: 375px;
+    float: left; }
+    div main h1 {
+      font-family: 'Times New Roman', serif;
+      color: #6fa0a1;
+      font-size: 1.6em;
+      font-weight: 400; }
+    div main a:link {
+      color: #bdc785; }
+  div aside {
+    width: 200px;
+    float: right;
+    background-image: linear-gradient(#bdc785, white); }
+    div aside img {
+      width: 100%; }
+    div aside p {
+      margin: 0 auto;
+      width: 180px;
+      font-style: italic; }
+
+footer {
+  margin: 25px;
+  padding-top: 50px;
+  clear: both; }
+  footer p {
+    font-family: "Arial", sans-serif; }
+
+/*# sourceMappingURL=style.css.map */
