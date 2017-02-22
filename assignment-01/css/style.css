@@ -2,18 +2,21 @@ body {
   height: 630px;
   width: 650px;
   margin: 0 auto;
-  margin-top: 50px; }
+  margin-top: 50px;
+  line-height: 1rem; }
 
 p {
-  font-size: 13px; }
+  font-size: 15px; }
 
 header {
-  background: black url("https://raw.githubusercontent.com/dreamsniper/mmp310-assignments/master/assignment-01/img/logo.png") no-repeat scroll 50% 50%;
+  background: black url("../img/logo.png") no-repeat scroll 50% 50%;
   width: 650px;
   height: 161px; }
 
 div {
-  margin: 25px; }
+  padding: 25px;
+  border: 1px solid lightgrey;
+  height: 250px; }
   div main {
     width: 375px;
     float: left; }
@@ -21,9 +24,15 @@ div {
       font-family: 'Times New Roman', serif;
       color: #6fa0a1;
       font-size: 1.6em;
-      font-weight: 400; }
+      font-weight: 400;
+      padding: 0;
+      margin: 0;
+      line-height: 1.5rem; }
     div main a:link {
       color: #bdc785; }
+    div main p {
+      font-size: .8rem;
+      line-height: 1.3rem; }
   div aside {
     width: 200px;
     float: right;
@@ -36,10 +45,9 @@ div {
       font-style: italic; }
 
 footer {
-  margin: 25px;
-  padding-top: 50px;
-  clear: both; }
+  padding: 25px; }
   footer p {
-    font-family: "Arial", sans-serif; }
+    font-family: "Arial", sans-serif;
+    font-size: .8rem; }
 
 /*# sourceMappingURL=style.css.map */

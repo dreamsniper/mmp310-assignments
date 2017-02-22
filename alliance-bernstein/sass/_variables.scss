@@ -1,0 +1,20 @@
+$font-stack--content:   Georgia, serif;
+$font-stack--footer:    Arial, Helvetica, sans-serif;
+
+$grid-column:           40px;
+$grid-gutter:           $grid-column;
+$grid-unit:             $grid-column + $grid-gutter;
+$grid-margin:           ($grid-gutter / 2);
+$grid-leading:          18px;
+
+$color--heading:        rgb(65, 132, 133);
+$color--link:           rgb(127, 148, 18);
+$color--start-gradient: rgb(233, 237, 215);
+$color--border:         rgb(204, 204, 204);
+$color--content:        rgb(51, 51, 51);
+
+$offset--top:           22px;
+
+$border-width--thin:    1px;
+
+$font-size--base:       12px;

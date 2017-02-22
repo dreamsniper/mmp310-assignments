@@ -6,55 +6,67 @@ $h1-color: #6fa0a1;
 $gradiant: #bdc785;
 
 body {
-  height: 25.2 * $grid-leading;
-  width: 6.5 * $grid-unit;
-  margin: 0 auto;
-  margin-top: $grid-gutter;
-  // border: 1px solid black
+    height: 25.2 * $grid-leading;
+    width: 6.5 * $grid-unit;
+    margin: 0 auto;
+    margin-top: $grid-gutter;
+    // border: 1px solid black
+    line-height: 1rem;
 }
+
 p {
-  font-size: 13px;
+    font-size: 15px;
 }
+
 header {
-  background: black url("https://raw.githubusercontent.com/dreamsniper/mmp310-assignments/master/assignment-01/img/logo.png") no-repeat scroll 50% 50%;
-  width: 6.5 * $grid-unit;
-  height: 6.44 * $grid-leading;
+    background: black url("../img/logo.png") no-repeat scroll 50% 50%;
+    width: 6.5 * $grid-unit;
+    height: 6.44 * $grid-leading;
 }
-div{
-  margin: $grid-leading;
-  main {
-  width: 15 * $grid-leading;
-  float: left;
-  h1 {
-    font-family: 'Times New Roman', serif;
-    color: $h1-color;
-    font-size: 1.6em;
-    font-weight: 400;
-  }
-    a:link {
-      color: $gradiant;
+
+div {
+    padding: $grid-leading;
+    border: 1px solid lightgrey;
+    height: 250px;
+    main {
+        width: 15 * $grid-leading;
+        float: left;
+        h1 {
+            font-family: 'Times New Roman', serif;
+            color: $h1-color;
+            font-size: 1.6em;
+            font-weight: 400;
+            padding:0;
+            margin: 0;
+            line-height: 1.5rem;
+        }
+        a:link {
+            color: $gradiant;
+        }
+        p{
+            font-size: .8rem;
+            line-height: 1.3rem;
+        }
     }
-}
-  aside {
-    width: 2 * $grid-unit;
-    float: right;
-    background-image: linear-gradient($gradiant, white);
-    img{
-      width: 100%;
+    aside {
+        width: 2 * $grid-unit;
+        float: right;
+        background-image: linear-gradient($gradiant, white);
+        img {
+            width: 100%;
+        }
+        p {
+            margin: 0 auto;
+            width: 1.8*$grid-unit;
+            font-style: italic;
+        }
     }
-    p {
-      margin: 0 auto;
-      width: 1.8*$grid-unit;
-      font-style: italic;
-    }
-  }
 }
 
 footer {
-  margin: $grid-leading;
-  padding-top: $grid-gutter;
-  clear: both;
-  p{
-    font-family: "Arial", sans-serif;
-  }
+    padding: $grid-leading;
+    p {
+        font-family: "Arial", sans-serif;
+        font-size: .8rem;
+    }
 }
