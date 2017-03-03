@@ -34,7 +34,7 @@ function enlargeBox() {
     }else{
         newWidth += 100; //adds 100px to element
         newHeight += 100;
-  }
+    }
     box.style.width = (newWidth) + "px"; //sets the style of the elemet
     box.style.height = (newHeight) + "px";
     //alert(box.style.width);
@@ -47,8 +47,12 @@ function shrinkBox() {
   var boxHeight = window.getComputedStyle(box, null).getPropertyValue('height');
   var newWidth = parseInt(boxWidth, 10); //gets rid of the px and leaves integer
   var newHeight = parseInt(boxHeight, 10);
-  newWidth -= 100;
-  newHeight -= 100;
+  if(newWidth <= 100){
+    alert("The box is too small");
+  }else{
+    newWidth -= 100; //adds 100px to element
+    newHeight -= 100;
+  }
   box.style.width = (newWidth) + "px";
   box.style.height = (newHeight) + "px";
   //alert(box.style.width);
