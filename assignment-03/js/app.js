@@ -51,17 +51,12 @@ function shrinkBox() {
 }
 
 if (null !== enlargeButton) {
-
-    enlargeButton.addEventListener('click', showAlert, false);
-
+    enlargeButton.addEventListener('click', enlargeBox, false);
 } else {
     console.error('No reference to ID %c enlarge-div established');
 }
-
 if (null !== shrinkButton) {
-
-    shrinkButton.addEventListener('click', showAlert, false);
-
+    shrinkButton.addEventListener('click', ShrinkBox, false);
 } else {
     console.error('No reference to ID %c shrink-div established');
 }
