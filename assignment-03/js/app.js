@@ -36,6 +36,20 @@ function enlargeBox() {
     //alert(box.style.width);
 }
 
+//To shrink div box by 100 px
+function shrinkBox() {
+  var box = document.querySelector('div'); //selects the div in the Dom
+  var boxWidth = window.getComputedStyle(box, null).getPropertyValue('width'); //get the width element
+  var boxHeight = window.getComputedStyle(box, null).getPropertyValue('height');
+  var newWidth = parseInt(boxWidth, 10); //gets rid of the px and leaves integer
+  var newHeight = parseInt(boxHeight, 10);
+  newWidth -= 100;
+  newHeight -= 100;
+  box.style.width = (newWidth) + "px";
+  box.style.height = (newHeight) + "px";
+  //alert(box.style.width);
+}
+
 if (null !== enlargeButton) {
 
     enlargeButton.addEventListener('click', showAlert, false);
