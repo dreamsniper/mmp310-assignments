@@ -4,18 +4,6 @@
 var enlargeButton = document.getElementById('enlarge-div'),
     shrinkButton = document.getElementById('shrink-div');
 
-//function showEnlargeAlert(){
-//    'use strict';
-//    
-//    alert('enlarge-div');
-//}
-//
-//function showShrinkAlert(){
-//    'use strict';
-//    
-//    alert('shrink-div');
-//}
-
 function showAlert() {
     'use strict';
 
