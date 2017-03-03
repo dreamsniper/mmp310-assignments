@@ -29,8 +29,12 @@ function enlargeBox() {
     var boxHeight = window.getComputedStyle(box, null).getPropertyValue('height');
     var newWidth = parseInt(boxWidth, 10); //gets rid of the px and leaves integer set to variable
     var newHeight = parseInt(boxHeight, 10);
-    newWidth += 100; //adds 100px to element
-    newHeight += 100;
+    if(newWidth >= 500){
+        alert("The box is too large");
+    }else{
+        newWidth += 100; //adds 100px to element
+        newHeight += 100;
+  }
     box.style.width = (newWidth) + "px"; //sets the style of the elemet
     box.style.height = (newHeight) + "px";
     //alert(box.style.width);
