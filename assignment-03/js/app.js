@@ -52,7 +52,7 @@ if (null !== enlargeButton) {
     console.error('No reference to ID %c enlarge-div established');
 }
 if (null !== shrinkButton) {
-    shrinkButton.addEventListener('click', ShrinkBox, false);
+    shrinkButton.addEventListener('click', shrinkBox, false);
 } else {
     console.error('No reference to ID %c shrink-div established');
 }
