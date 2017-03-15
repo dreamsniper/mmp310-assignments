@@ -1,0 +1,22 @@
+h2 {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #A9DA88;
+  width: 50%;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+  margin: 0 auto; }
+
+ul {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: #62997A;
+  width: 50%;
+  margin: 0 auto; }
+  ul li {
+    list-style: none;
+    padding: .5rem;
+    margin: .5rem;
+    color: #72243D;
+    background-color: #F0FFC9; }
+
+/*# sourceMappingURL=style.css.map */
