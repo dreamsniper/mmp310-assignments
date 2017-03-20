@@ -1,12 +1,20 @@
-// window.onLoad = function () {
-//   'use strict'
+/*jslint browser, es6, single, for, devel, this */
+/*global window */
 
-//   var msg = document.getElementById('msg');
-//   msg.innerHtml = '<h1>hello, world</h1>';
+var accordion = document.getElementById('accordion');
+var accordionButton = document.getElementsByClassName('accordion-button');
+var boxSlider = document.getElementsByClassName('box');
 
-//   var div = document.createElement('div');
-//   var text = document.createTextNode('This is content in the new div.');
-//   div.appendChild(text);
-//   document.body.appendChild(div);
-// };
-var button = document.getElementByTagName('h2');
+for (var i = 0; i < accordionButton.length; i++) {
+    accordionButton[i].addEventListener('click', toggle, false);
+}
+
+function toggle() {
+    var currentClass = this.parentNode.className;
+    for (var a = 0; a < boxSlider.length; a++) {
+        boxSlider[a].className = 'box hide';
+    }
+    if (currentClass == 'box hide') {
+        this.parentNode.className = 'box show';
+    }
+}
