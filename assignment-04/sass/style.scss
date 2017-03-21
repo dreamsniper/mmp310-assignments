@@ -4,42 +4,44 @@ $yellowGreen: #F0FFC9;
 $jadeGreen: #62997A;
 $wineColor: #72243D;
 $redWood: #3B0819;
-
 #accordion {
-  background-color: $wineColor;
-  padding: 10px;
-  .accordion-button {
-    color: #000;
-    padding: 1rem;
-    background-color: $grassGreen;
-    width: 50%;
-    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
-    margin: 0 auto;
-    &:link {}
-    &:visited {}
-     &:hover {
-      color: #fff;
-      cursor: pointer;
+    background-color: $wineColor;
+    padding: 10px;
+    .accordion-button {
+        color: #000;
+        padding: 1rem;
+        background-color: $grassGreen;
+        width: 50%;
+        box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+        margin: 0 auto;
+        &:link {}
+        &:visited {}
+        &:hover {
+            color: #fff;
+            cursor: pointer;
+        }
+        &:active {
+            background-color: darken($grassGreen, 20%)
+        }
     }
-    &:active {background-color: darken($grassGreen, 20%)}
-  }
-  ul {
-    margin: 1rem;
-    padding: 1rem;
-    background-color: $jadeGreen;
-    width: 50%;
-    margin: 0 auto;
-    display: block;
-    li {
-      list-style: .5rem;
-      margin: .5rem;
-      color: $wineColor;
-      background-color: $yellowGreen;
+    ul {
+        margin: 1rem;
+        padding: 1rem;
+        background-color: $jadeGreen;
+        width: 50%;
+        margin: 0 auto;
+        display: block;
+        li {
+            list-style: .5rem;
+            margin: .5rem;
+            color: $wineColor;
+            background-color: $yellowGreen;
+        }
     }
-  }
-  .hide {
-    display: none;
-  }
-  .show {
-  }
+    .hide {
+        display: none;
+    }
+    .show {
+        display: block;
+    }
 }

@@ -27,5 +27,7 @@
       background-color: #F0FFC9; }
   #accordion .hide {
     display: none; }
+  #accordion .show {
+    display: block; }
 
 /*# sourceMappingURL=style.css.map */
