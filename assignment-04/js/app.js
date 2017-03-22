@@ -2,7 +2,7 @@
 /*global window */
 
 var accordion = document.getElementById('accordion');
-var accordionButton = document.getElementsByClassName('accordion-button');
+var accordionButton = document.getElementsByTagName('h2');
 var boxSlider = document.getElementsByClassName('box');
 
 for (var i = 0; i < accordionButton.length; i++) {
