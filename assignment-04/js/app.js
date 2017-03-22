@@ -10,13 +10,12 @@ for (var i = 0; i < accordionButton.length; i++) {
 }
 
 function toggle() {
-
     var currentClass = this.parentNode.className;
 
     for (var a = 0; a < boxSlider.length; a++) {
         boxSlider[a].className = 'box hide';
     }
     if (currentClass == 'box hide') {
-    this.parentNode.className = 'box show';
-}
+        this.parentNode.className = 'box show';
+    }
 }
