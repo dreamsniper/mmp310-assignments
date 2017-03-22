@@ -5,10 +5,12 @@ var accordion = document.getElementById('accordion');
 var accordionButton = document.getElementsByTagName('h2');
 var boxSlider = document.getElementsByClassName('box');
 
+//add eventListeners to h2 buttons
 for (var i = 0; i < accordionButton.length; i++) {
     accordionButton[i].addEventListener('click', toggle, false);
 }
 
+//to open and close child divs
 function toggle() {
     var currentClass = this.parentNode.className;
 
