@@ -29,5 +29,8 @@
     display: none; }
   #accordion .show {
     display: block; }
+  #accordion .box {
+    padding: 1em;
+    margin: 0 auto; }
 
 /*# sourceMappingURL=style.css.map */
