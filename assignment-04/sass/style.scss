@@ -7,7 +7,7 @@ $redWood: #3B0819;
 #accordion {
     background-color: $wineColor;
     padding: 10px;
-    .accordion-button {
+    h2 {
         color: #000;
         padding: 1rem;
         background-color: $grassGreen;
@@ -43,5 +43,9 @@ $redWood: #3B0819;
     }
     .show {
         display: block;
+    }
+    .box {
+        padding: 1em;
+        margin: 0 auto;
     }
 }
