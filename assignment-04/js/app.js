@@ -3,21 +3,25 @@
 
 var accordion = document.getElementById('accordion');
 var accordionButton = document.getElementsByTagName('h2');
-var boxSlider = document.getElementsByClassName('box');
 
 //add eventListeners to h2 buttons
 for (var i = 0; i < accordionButton.length; i++) {
     accordionButton[i].addEventListener('click', toggle, false);
+
+    for (var b = 0; b < 1; b++) {
+        accordionButton[b].nextElementSibling.classList = 'box show';
+    }
+    accordionButton[i].nextElementSibling.classList = 'box hide';
 }
+
 
 //to open and close child divs
 function toggle() {
     var currentClass = this.parentNode.className;
 
-    for (var a = 0; a < boxSlider.length; a++) {
-        boxSlider[a].className = 'box hide';
-    }
-    if (currentClass == 'box hide') {
-        this.parentNode.className = 'box show';
+    for (var d = 0; d < this.length; d++) {
+        if (accordionButton.nextElementSibling.className === 'box hide') {
+            accordionButton.nextElementSibling.className = 'box show';
+        }
     }
 }
