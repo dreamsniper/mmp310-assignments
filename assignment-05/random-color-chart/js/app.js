@@ -34,14 +34,12 @@ window.onload = function () {
     //
     // Convert the input from the user, which is created initially as a string, to
     // its base-10 numerical equivalent.
-    //
     userInput = parseInt(userInput, 10);
 
-
-    //no negative numbers or string input
+    //basic validation for negative numbers and string input
     do {
-        userInput = prompt('Enter a valid number between 0 and 256', '4');
-    } while (userInput < 0 || userInput > 256 || Number.isNaN(userInput));
+        userInput = prompt('Enter a valid number between 0 and 256');
+    } while (userInput < 0 || userInput > 256 || isNaN(userInput));
 
 
     for (row = 0; row < userInput; row += 1) {
