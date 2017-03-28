@@ -37,6 +37,13 @@ window.onload = function () {
     //
     userInput = parseInt(userInput, 10);
 
+
+    //no negative numbers or string input
+    do {
+        userInput = prompt('Enter a valid number between 0 and 256', '4');
+    } while (userInput < 0 || userInput > 256 || Number.isNaN(userInput));
+
+
     for (row = 0; row < userInput; row += 1) {
         tableRows[row] = document.createElement('tr');
 
@@ -44,9 +51,9 @@ window.onload = function () {
             tableColumns[cellIndex] = document.createElement('td');
 
             tableColumns[cellIndex].style.backgroundColor =
-                    'rgb(' + getRandomNumber(MIN, MAX) + ', ' +
-                    getRandomNumber(MIN, MAX) + ', ' +
-                    getRandomNumber(MIN, MAX) + ')';
+                'rgb(' + getRandomNumber(MIN, MAX) + ', ' +
+                getRandomNumber(MIN, MAX) + ', ' +
+                getRandomNumber(MIN, MAX) + ')';
 
             tableRows[row].appendChild(tableColumns[cellIndex]);
 
