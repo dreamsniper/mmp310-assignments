@@ -1,27 +1,54 @@
 /*jslint browser, es6, single, for, devel, this */
 /*global window */
-
-var accordion = document.getElementById('accordion');
-var accordionButton = document.getElementsByTagName('h2');
-
-//add eventListeners to h2 buttons
-for (var i = 0; i < accordionButton.length; i++) {
-    accordionButton[i].addEventListener('click', toggle, false);
-
-    for (var b = 0; b < 1; b++) {
-        accordionButton[b].nextElementSibling.classList = 'box show';
-    }
-    accordionButton[i].nextElementSibling.classList = 'box hide';
-}
+window.onload = function () {
+    let accordion = document.getElementById('accordion'),
+        accordionButton = document.querySelectorAll('h2'),
+        accordionButtonDiv = document.querySelectorAll('h2 + div'),
+        index,
+        allAccordionClosed = true,
+        openDivPosition;
 
 
-//to open and close child divs
-function toggle() {
-    var currentClass = this.parentNode.className;
+    function toggle() {
+        //compares the clicked elements position with the array of buttons and assigns the position to index
+        //once compareDucumentPosition returns 0 if they match in the array index the loop breaks.x
+        for (index = 0; index < accordionButton.length; index += 1) {
 
-    for (var d = 0; d < this.length; d++) {
-        if (accordionButton.nextElementSibling.className === 'box hide') {
-            accordionButton.nextElementSibling.className = 'box show';
+            if (0 === this.compareDocumentPosition(accordionButton[index])) {
+                break;
+            }
+        }
+        if (allAccordionClosed) {
+
+            //assign index to new variable
+            openDivPosition = index;
+
+            //change the style to block can also be done with classes
+            accordionButtonDiv[index].style.display = 'block';
+
+            //accordions no longer all closed
+            allAccordionClosed = false;
+
+        } else {
+
+            if (index === openDivPosition) {
+
+                accordionButtonDiv[index].style.display = 'none';
+
+                allAccordionClosed = true;
+
+            } else {
+                accordionButtonDiv[openDivPosition].style.display = 'none';
+
+                accordionButtonDiv[index].style.display = "block";
+
+                openDivPosition = index;
+            }
         }
     }
+    //add eventListeners to buttons
+    for (var i = 0; i < accordionButton.length; i += 1) {
+        accordionButton[i].addEventListener('click', toggle, false);
+    }
+
 }
