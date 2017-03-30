@@ -25,12 +25,12 @@
       margin: .5rem;
       color: #72243D;
       background-color: #F0FFC9; }
-  #accordion .hide {
+  #accordion div {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #62997A;
+    width: 50%;
+    margin: 0 auto;
     display: none; }
-  #accordion .show {
-    display: block; }
-  #accordion .box {
-    padding: 1em;
-    margin: 0 auto; }
 
 /*# sourceMappingURL=style.css.map */
