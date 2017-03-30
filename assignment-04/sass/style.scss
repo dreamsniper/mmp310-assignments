@@ -38,14 +38,12 @@ $redWood: #3B0819;
             background-color: $yellowGreen;
         }
     }
-    .hide {
-        display: none;
-    }
-    .show {
-        display: block;
-    }
-    .box {
-        padding: 1em;
+    div {
+        margin: 1rem;
+        padding: 1rem;
+        background-color: #62997A;
+        width: 50%;
         margin: 0 auto;
+        display: none;
     }
 }
