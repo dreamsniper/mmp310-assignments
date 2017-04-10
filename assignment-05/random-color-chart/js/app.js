@@ -31,7 +31,6 @@ window.onload = function () {
         MIN = 0,
         MAX = 256;
 
-<<<<<<< HEAD
     function validate() {
         //check if the feild id blank
         if (userInput == "") {
@@ -68,9 +67,7 @@ window.onload = function () {
     //basic validation for negative numbers and string input
     if (validate() === false) {
 
-        do {
-            validate();
-        } while (validate() === false);
+        validate();
 
     } else {
 
@@ -81,26 +78,10 @@ window.onload = function () {
                 tableColumns[cellIndex] = document.createElement('td');
 
                 tableColumns[cellIndex].style.backgroundColor =
-=======
-    //
-    // Convert the input from the user, which is created initially as a string, to
-    // its base-10 numerical equivalent.
-    //
-    userInput = parseInt(userInput, 10);
-
-    for (row = 0; row < userInput; row += 1) {
-        tableRows[row] = document.createElement('tr');
-
-        for (column = 0; column < userInput; column += 1) {
-            tableColumns[cellIndex] = document.createElement('td');
-
-            tableColumns[cellIndex].style.backgroundColor =
->>>>>>> 0978cdaba7ebaef3f3193b8b22acb739031c7688
                     'rgb(' + getRandomNumber(MIN, MAX) + ', ' +
                     getRandomNumber(MIN, MAX) + ', ' +
                     getRandomNumber(MIN, MAX) + ')';
 
-<<<<<<< HEAD
                 tableRows[row].appendChild(tableColumns[cellIndex]);
 
                 cellIndex += 1;
@@ -112,15 +93,3 @@ window.onload = function () {
         body.appendChild(table);
     };
 }
-=======
-            tableRows[row].appendChild(tableColumns[cellIndex]);
-
-            cellIndex += 1;
-        }
-
-        table.appendChild(tableRows[row]);
-    }
-
-    body.appendChild(table);
-};
->>>>>>> 0978cdaba7ebaef3f3193b8b22acb739031c7688
