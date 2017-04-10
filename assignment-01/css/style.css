@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   height: 630px;
   width: 650px;
@@ -51,3 +52,14 @@ footer {
     font-size: .8rem; }
 
 /*# sourceMappingURL=style.css.map */
+=======
+header {
+  background-color: #000;
+  background-image: url("https://raw.githubusercontent.com/dreamsniper/mmp310-assignments/master/assignment-01/img/logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 15px;
+  width: 650px;
+  height: 160px;
+}
+>>>>>>> 8428ec7c61a0c27d114a67c92cbe9b91c5b9c3b6

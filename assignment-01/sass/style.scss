@@ -4,13 +4,17 @@ $grid-leading: 25px;
 $grid-unit: $grid-column + $grid-gutter;
 $h1-color: #6fa0a1;
 $gradiant: #bdc785;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8428ec7c61a0c27d114a67c92cbe9b91c5b9c3b6
 body {
     height: 25.2 * $grid-leading;
     width: 6.5 * $grid-unit;
     margin: 0 auto;
     margin-top: $grid-gutter;
     // border: 1px solid black
+<<<<<<< HEAD
     line-height: 1rem;
 }
 
@@ -20,14 +24,28 @@ p {
 
 header {
     background: black url("../img/logo.png") no-repeat scroll 50% 50%;
+=======
+}
+
+p {
+    font-size: 13px;
+}
+
+header {
+    background: black url("img/logo.png") no-repeat scroll 50% 50%;
+>>>>>>> 8428ec7c61a0c27d114a67c92cbe9b91c5b9c3b6
     width: 6.5 * $grid-unit;
     height: 6.44 * $grid-leading;
 }
 
 div {
+<<<<<<< HEAD
     padding: $grid-leading;
     border: 1px solid lightgrey;
     height: 250px;
+=======
+    margin: $grid-leading;
+>>>>>>> 8428ec7c61a0c27d114a67c92cbe9b91c5b9c3b6
     main {
         width: 15 * $grid-leading;
         float: left;
@@ -36,17 +54,23 @@ div {
             color: $h1-color;
             font-size: 1.6em;
             font-weight: 400;
+<<<<<<< HEAD
             padding:0;
             margin: 0;
             line-height: 1.5rem;
+=======
+>>>>>>> 8428ec7c61a0c27d114a67c92cbe9b91c5b9c3b6
         }
         a:link {
             color: $gradiant;
         }
+<<<<<<< HEAD
         p{
             font-size: .8rem;
             line-height: 1.3rem;
         }
+=======
+>>>>>>> 8428ec7c61a0c27d114a67c92cbe9b91c5b9c3b6
     }
     aside {
         width: 2 * $grid-unit;
@@ -64,9 +88,17 @@ div {
 }
 
 footer {
+<<<<<<< HEAD
     padding: $grid-leading;
     p {
         font-family: "Arial", sans-serif;
         font-size: .8rem;
+=======
+    margin: $grid-leading;
+    padding-top: $grid-gutter;
+    clear: both;
+    p {
+        font-family: "Arial", sans-serif;
+>>>>>>> 8428ec7c61a0c27d114a67c92cbe9b91c5b9c3b6
     }
 }
