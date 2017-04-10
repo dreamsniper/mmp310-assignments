@@ -31,35 +31,67 @@ window.onload = function () {
         MIN = 0,
         MAX = 256;
 
+    function validate() {
+        //check if the feild id blank
+        if (userInput == "") {
+            userInput = prompt('Please Enter a VALUE between 0 and 256', '2');
+            return false;
+        }
+
+        //check if input id not a string
+        if (Number.isNaN(userInput)) {
+            userInput = prompt(' No words only a NUMBER!!!! between 0 and 256', '2');
+            return false;
+        }
+
+        //check if number is negative
+        if (userInput < MIN) {
+            userInput = prompt('Nothing below 0 only a value between 0 and 256', '2');
+            return false;
+        }
+
+        //check if inout is greater thamn MAX
+        if (userInput > MAX) {
+            userInput = prompt('Nothing higher than 256! only a value between 0 and 256', '2');
+            return false;
+        }
+        return true;
+    }
+
     //
     // Convert the input from the user, which is created initially as a string, to
     // its base-10 numerical equivalent.
     userInput = parseInt(userInput, 10);
 
+
     //basic validation for negative numbers and string input
-    do {
-        userInput = prompt('Enter a valid number between 0 and 256');
-    } while (userInput < 0 || userInput > 256 || isNaN(userInput));
+    if (validate() === false) {
 
+        do {
+            validate();
+        } while (validate() === false);
 
-    for (row = 0; row < userInput; row += 1) {
-        tableRows[row] = document.createElement('tr');
+    } else {
 
-        for (column = 0; column < userInput; column += 1) {
-            tableColumns[cellIndex] = document.createElement('td');
+        for (row = 0; row < userInput; row += 1) {
+            tableRows[row] = document.createElement('tr');
 
-            tableColumns[cellIndex].style.backgroundColor =
-                'rgb(' + getRandomNumber(MIN, MAX) + ', ' +
-                getRandomNumber(MIN, MAX) + ', ' +
-                getRandomNumber(MIN, MAX) + ')';
+            for (column = 0; column < userInput; column += 1) {
+                tableColumns[cellIndex] = document.createElement('td');
 
-            tableRows[row].appendChild(tableColumns[cellIndex]);
+                tableColumns[cellIndex].style.backgroundColor =
+                    'rgb(' + getRandomNumber(MIN, MAX) + ', ' +
+                    getRandomNumber(MIN, MAX) + ', ' +
+                    getRandomNumber(MIN, MAX) + ')';
 
-            cellIndex += 1;
+                tableRows[row].appendChild(tableColumns[cellIndex]);
+
+                cellIndex += 1;
+            }
+
+            table.appendChild(tableRows[row]);
         }
 
-        table.appendChild(tableRows[row]);
-    }
-
-    body.appendChild(table);
-};
+        body.appendChild(table);
+    };
+}
