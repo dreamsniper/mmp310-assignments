@@ -52,4 +52,7 @@ As an example
 Look at our course syllabus at [`http://roy.vanegas.org/teaching/at-bmcc/multimedia-programming-ii/`](http://roy.vanegas.org/teaching/at-bmcc/multimedia-programming-ii/) to get an exact idea of how your accordion should behave.
 
 ## Due
-This assignment is due by 11:59 PM on Tuesday, 21 March 2017.
+This assignment is due by 11:59 PM on Wednesday, 22 March 2017.
+
+## Submitting
+Create a pull request (read more [here](https://help.github.com/articles/creating-a-pull-request-from-a-fork/)) from your current branch into the `master` branch of the [assignments repo](https://github.com/code-warrior/mmp310-assignments).
