@@ -1,1 +1,1 @@
-Homework assignments for MMP 310, Multimedia Programming II, at BMCC
+Midterm Assignment for MMP 310, Multimedia Programming II, at BMCC
