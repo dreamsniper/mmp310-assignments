@@ -15,6 +15,8 @@ body.appendChild(script);
 
 //define HeaderNav as function loop through the file and build the menu items
 function headerNav(navItems) {
+    'use strict'
+
     //to build the html string
     var html = [];
 
@@ -29,20 +31,19 @@ function headerNav(navItems) {
 
             //cycle through the urls and labels and build the a tag
             ul += '<a href="' + navItems.items[i].url + '" >' + navItems.items[i].label + '</a>';
-            console.log(ul);
 
             ul += '<ul>';
-            console.log(ul);
+
             for (var a = 0; a < navItems.items[i].items.length; a++) {
                 ul += '<li>';
-                console.log(ul);
+
                 //cycle through theurls and labels and build the a tag
                 html[a] = '<a href="' + navItems.items[1].items[a].url + '" >' + navItems.items[1].items[a].label + '</a>';
 
                 //add ul li list
                 ul += html[a];
+
                 ul += '</li>';
-                console.log(ul);
             }
             //close the nested ul
             ul += '</ul>';
@@ -56,6 +57,7 @@ function headerNav(navItems) {
 
             //add ul li list
             ul += html[i];
+
             ul += '</li>';
         }
     }
