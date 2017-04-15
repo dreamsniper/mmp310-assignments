@@ -10,10 +10,11 @@ var body = document.body,
     nav = document.getElementsByTagName('nav')[0],
     main = document.getElementsByTagName('main')[0],
     h1 = document.getElementsByTagName('h1')[0],
-    h2 = document.getElementsByTagName('h2'),
-    h3 = document.getElementsByTagName('h3'),
+    h2 = document.getElementsByTagName('h2')[0],
+    h3 = document.getElementsByTagName('h3')[0],
     pTag = document.getElementsByTagName('p')[0],
-    blockquote = document.getElementsByTagName('blockquote'),
+    blockquote = document.getElementsByTagName('blockquote')[0],
+    mainLi = document.querySelectorAll('main > ul > li'),
     footer = document.getElementsByTagName('footer');
 
 
@@ -77,16 +78,27 @@ function headerNav(navItems) {
 function content(info) {
     'use strict';
 
-    //append header
-    var header1 = document.createTextNode(info.h1);
-    h1.appendChild(header1);
+    //append text to header
+    h1.innerHTML = info.h1;
 
-    //append p element
-    var pTagText = '' + info.p;
-    console.log(pTagText);
-    pTag.innerHTML(pTagText);
+    //append text to p element
+    pTag.innerHTML = info.p;
 
+    //append text to h2 element
+    h2.innerHTML = info.h2;
 
+    //append text to blockquote element
+    blockquote.innerHTML = info.blockquote;
+
+    //append text to h3 element
+    h3.innerHTML = info.h3;
+
+    //append text list to li elements
+    for (var q = 0; q < info.list.length; q++) {
+        if (info.list) {
+            mainLi[q].innerHTML = info.list[q].content;
+        }
+    }
 
 
 }
