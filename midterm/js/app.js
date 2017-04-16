@@ -117,8 +117,8 @@ var spanArray = {
 
 for (var f = 0; f < footerSpan.length; f++) {
     var spanHtml = '';
-    spanHtml += '<i class="fa fa-';
+    spanHtml += '<a href="#"><i class="fa fa-';
     spanHtml += spanArray.icons[f];
-    spanHtml += '" aria-hidden="true"></i>';
+    spanHtml += '" aria-hidden="true"></i></a>';
     footerSpan[f].innerHTML = spanHtml;
 }
