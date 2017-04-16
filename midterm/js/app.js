@@ -15,7 +15,7 @@ var body = document.body,
     pTag = document.getElementsByTagName('p')[0],
     blockquote = document.getElementsByTagName('blockquote')[0],
     mainLi = document.querySelectorAll('main > ul > li'),
-    footer = document.getElementsByTagName('footer');
+    footerSpan = document.querySelectorAll('footer > nav > span');
 
 
 //create script tag for the Json file and append to head
@@ -99,6 +99,26 @@ function content(info) {
             mainLi[q].innerHTML = info.list[q].content;
         }
     }
+}
 
+/*
+<i class="fa fa-facebook" aria-hidden="true"></i>
+<i class="fa fa-twitter" aria-hidden="true"></i>
+<i class="fa fa-instagram" aria-hidden="true"></i>
+<i class="fa fa-youtube" aria-hidden="true"></i>
+*/
 
+var spanArray = {
+    icons: ['facebook',
+            'twitter',
+            'instagram',
+            'youtube']
+};
+
+for (var f = 0; f < footerSpan.length; f++) {
+    var spanHtml = '';
+    spanHtml += '<i class="fa fa-';
+    spanHtml += spanArray.icons[f];
+    spanHtml += '" aria-hidden="true"></i>';
+    footerSpan[f].innerHTML = spanHtml;
 }
